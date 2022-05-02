@@ -7,7 +7,7 @@ public class AccountTest {
     @Test
     @DisplayName("Можно напечатать строку с фамилией и именем с допустимым значением")
     public void checkNameToEmbossWithValidData() {
-        String name = "Vasya  Ivanov";
+        String name = "Vasya Ivanov";
         Account account = new Account(name);
         Assert.assertTrue(account.checkNameToEmboss());
     }
