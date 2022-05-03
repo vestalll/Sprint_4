@@ -68,4 +68,19 @@ public class AccountTest {
         Assert.assertFalse(account.checkNameToEmboss());
     }
 
+    @Test
+    @DisplayName("Нельзя напечатать строку с пустым значением")
+    public void checkNameToEmbossWithEmptyString() {
+        String name = "";
+        Account account = new Account(name);
+        Assert.assertFalse(account.checkNameToEmboss());
+    }
+
+    @Test
+    @DisplayName("Нельзя напечатать строку в случае если задано null вместо значения")
+    public void checkNameToEmbossWithNull() {
+        String name = null;
+        Account account = new Account(name);
+        Assert.assertFalse(account.checkNameToEmboss());
+    }
 }
