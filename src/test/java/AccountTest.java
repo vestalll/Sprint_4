@@ -2,7 +2,6 @@ import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
@@ -20,7 +19,7 @@ public class AccountTest {
     public static Object[][] getName() {
         return new Object[][]{
                 {"Vasya Ivanov", true},
-                {"A C", true},
+                {"Ac Ac", true},
                 {"Qwertyui Asdfghjkl", true},
                 {"Ab", false},
                 {"Qwertyuio Asdfghjklz", false},
